@@ -1,6 +1,6 @@
 require 'findtodo'
 
-RSpec.describe "returns a task if the task string includes TODO' " do
+RSpec.describe "returns true if the task string includes 'TODO' " do
   it "returns true when TODO found in string" do
     expect(check_string("TODO: walking the dog")).to eq true
   end
