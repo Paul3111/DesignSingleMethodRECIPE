@@ -21,7 +21,7 @@ RSpec.describe "returns true if the task string includes 'TODO' " do
     expect(check_string("walking the cat")).to eq false
   end
 
-  it "input is nil" do
+  it "fails if input is nil" do
     expect { check_string(nil) }.to raise_error "there is no input"
   end
 end
